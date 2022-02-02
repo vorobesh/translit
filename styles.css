@@ -1,0 +1,229 @@
+* {
+  font-family: 'Fixedsys', serif;
+  color: #2fec7c;
+  font-size: 26px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background-color: #222214;
+  height: 70px;
+  width: 950px;
+  border-radius: 30px;
+  border-style: ridge;
+  border-width: 5px;
+  border-color: #0c190e;
+}
+
+#input-id {
+  height: 50px;
+  width: 650px;
+  background-color: #3c4421;
+}
+
+.page-left,
+.page-right {
+  min-height: 450px;
+  width: 450px;
+  border-style: groove;
+  border-width: 40px;
+  border-color: #0c190e;
+  color: #2fec7c;
+
+  background-image: url('./images/background.jpeg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.page-left {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-right-width: 0px;
+}
+
+.page-right {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-left-width: 0px;
+}
+
+#button-id {
+  background-image: url('./images/button-off.jpg');
+  width: 59px;
+  height: 59px;
+  border-style: groove;
+  border-color: #dace9b;
+  border-width: 1px;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
+#vocabulary {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#main {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.block-text {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 5px;
+}
+
+.block-text:hover::after {
+  content: attr(data-title);
+  /* Выводим текст */
+  position: absolute;
+  /* Абсолютное позиционирование */
+  left: 40%;
+  top: 0%;
+  z-index: 1;
+  /* Отображаем подсказку поверх других элементов */
+  background: #3c4421;
+  font-family: "Fixedsys", sans-serif;
+  font-size: 18px;
+  padding: 2px 2px;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+/* мне хочется сделать, чтобы подсказка вылазила под элементом,
+на который наводится курсор, либо под курсором, но пока не знаю
+как это сделать :( */
+
+p {
+  text-align: center;
+}
+
+@font-face {
+  font-family: "Fixedsys";
+  src: url("./fonts/fixedsys.ttf");
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  * {
+    font-size: 18px;
+  }
+
+  .page-left,
+  .page-right {
+    min-height: 370px;
+    width: 300px;
+    border-width: 30px;
+  }
+
+  .page-left {
+    border-right-width: 0px;
+  }
+
+  .page-right {
+    border-left-width: 0px;
+  }
+
+  #input-id {
+    width: 400px;
+  }
+
+  form {
+    width: 650px;
+  }
+}
+
+@media (max-width: 767px) {
+  #vocabulary {
+    flex-direction: column;
+  }
+
+  * {
+    font-size: 18px;
+  }
+
+  .page-left,
+  .page-right {
+    min-height: 200px;
+    width: 320px;
+    border-width: 17.5px;
+  }
+
+  .page-left {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 0px;
+
+    border-bottom-width: 0px;
+  }
+
+  .page-right {
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+
+    border-top-width: 0px;
+  }
+
+  form {
+    width: 335px;
+  }
+
+  #input-id {
+    width: 230px;
+  }
+}
+
+@media (max-width: 355px) {
+  #vocabulary {
+    flex-direction: column;
+  }
+
+  * {
+    font-size: 16px;
+  }
+
+  .page-left,
+  .page-right {
+    min-height: 200px;
+    width: 265px;
+    border-width: 15px;
+  }
+
+  .page-left {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 0px;
+
+    border-bottom-width: 0px;
+  }
+
+  .page-right {
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+
+    border-top-width: 0px;
+  }
+
+  form {
+    width: 285px;
+  }
+
+  #input-id {
+    width: 180px;
+  }
+}
