@@ -34,7 +34,7 @@ form {
   border-color: #0c190e;
   color: #2fec7c;
 
-  background-image: url('./images/background.jpeg');
+  background-image: url('images/background.jpeg');
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -57,7 +57,7 @@ form {
 }
 
 #button-id {
-  background-image: url('./images/button-off.jpg');
+  background-image: url('images/button-off.jpg');
   width: 59px;
   height: 59px;
   border-style: groove;
@@ -114,7 +114,7 @@ p {
 
 @font-face {
   font-family: "Fixedsys";
-  src: url("./fonts/fixedsys.ttf");
+  src: url("fonts/fixedsys.ttf");
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
