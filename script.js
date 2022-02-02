@@ -82,20 +82,20 @@ function sleep(ms) {
 
 async function bottomBlink() {
   const button = document.getElementById('button-id');
-  button.style.backgroundImage = "url('./images/button-on.jpg')";
+  button.style.backgroundImage = "url('images/button-on.jpg')";
   await sleep(200);
-  button.style.backgroundImage = "url('./images/button-off.jpg')";
+  button.style.backgroundImage = "url('images/button-off.jpg')";
 }
 
 document.getElementById('input-id').addEventListener('input', (event) => {
   event.preventDefault();
-  playMusic('./sounds/lamp.mp3');
+  playMusic('sounds/lamp.mp3');
 });
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   bottomBlink();
-  playMusic('./sounds/kasset.mp3');
+  playMusic('sounds/kasset.mp3');
   const enteredText = document.getElementById('input-id').value;
   if (enteredText.trim()) {
     const blockText = document.createElement('div');
