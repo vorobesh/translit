@@ -1,0 +1,28 @@
+{
+  "name": "assessment-0-translit",
+  "version": "1.0.0",
+  "description": "![screenshot](pic.gif) ## Введение Тебе предстоит разработать веб-приложение, которое будет превращать текст на русском языке в его транслитерацию и сохранять её в словарик. С чего начать? Обычно, когда даётся задача в таком абстрактном виде, то её надо разбить на подзадачи. Этот процесс, говоря более умными словами, называется __декомпозиция__. Тебе повезло, мы уже провели декомпозицию - разбили задачу на релизы!",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vorobesh/assessment-0-translit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vorobesh/assessment-0-translit/issues"
+  },
+  "homepage": "https://github.com/vorobesh/assessment-0-translit#readme",
+  "devDependencies": {
+    "eslint": "^8.6.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0"
+  }
+}
